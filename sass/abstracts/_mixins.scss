@@ -1,0 +1,13 @@
+@mixin flex($jc:flex-start){
+    display: flex;
+    align-items: center;
+    justify-content: $jc;
+}
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin transition($prop:all){
+    transition: $prop .3s ease;
+}

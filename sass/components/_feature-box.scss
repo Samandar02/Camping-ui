@@ -1,0 +1,22 @@
+.feuture-box{
+    padding: 60px 20px;
+    background-color: $color-white;
+    border-radius: $border-radius;
+    text-align: center;
+    cursor: default;
+    &:hover{
+        @include transition;
+        transform: translateY(-15px) scale(1.02);
+    }
+    .feuture-image{
+        width: 90px;
+        height: 90px;
+    }
+    .feuture-title{
+        margin-top: 23px;
+        margin-bottom: 12px;
+    }
+    .feuture-text{
+        font-style: 16px;
+    }
+}

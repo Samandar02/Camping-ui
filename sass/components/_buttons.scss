@@ -1,0 +1,40 @@
+.sign-up{
+    display: inline-block;
+    padding: 15px 25px;
+    color: $color-white;
+    font-weight: 500;
+}
+.sign-up{
+    border: 1px solid $color-white;
+    border-radius: 30px;
+    @include transition;
+    &:hover{
+        background-color: $color-white;
+        border-radius: 1px solid transparent;
+        color: $color-secondary;
+    }
+}
+.btn{
+    display: inline-block;
+    padding: 15px 60px;
+    border-radius: 30px;
+    &-primary{
+        background-color: $color-primary;
+        @include transition;
+        &:hover{
+            background-color: darken($color-primary,10%);
+        }
+    }
+    &-outline{
+        background-color: transparent;
+        border: 1px solid $color-primary;
+        color: $color-primary;
+        font-weight: 500;
+        @include transition;
+        &:hover{
+            background-color: $color-primary;
+            color: $color-white;
+            border: 1px solid transparent;
+        }
+    }
+}
